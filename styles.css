@@ -100,6 +100,7 @@ body {
 .sign-up--header--text {
   max-width: 900px;
   padding-bottom: 40px;
+  padding-right: 50px;
   font-size: 30px;
   font-weight: 500;
   color: #020617;
@@ -129,6 +130,7 @@ body {
   justify-content: space-between;
   padding-top: 25px;
   padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 25px;
 }
 
@@ -191,10 +193,25 @@ body {
   border-radius: 10px;
   background-color: #596d48;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #4c5f3d;
+}
+
+.submit-button:active {
+  transform: scale(0.9);
 }
 
 .log-in-link {
   color: #596d48;
   font-weight: bold;
   text-decoration: none;
+}
+
+.log-in-link:hover {
+  color: #4c5f3d;
+  text-decoration: underline;
 }
