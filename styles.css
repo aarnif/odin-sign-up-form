@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("assets/fonts/Norse-Bold.otf") format("opentype");
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-weight: 400;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  min-width: 400px;
+  max-width: 800px;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.odin-logo-container {
+  position: relative;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-logo--img {
+  width: 140px;
+}
+
+.odin-logo--text {
+  font-family: "Norse Bold";
+  font-size: 120px;
+  color: white;
+  font-weight: 1000;
+}
+
+.image-shoutout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shoutout-text {
+  color: white;
+  font-size: 16px;
+}
+
+.sign-up-container {
+  flex-grow: 1;
+}
