@@ -7,6 +7,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   font-weight: 400;
   color: inherit;
@@ -58,6 +64,7 @@ body {
   font-size: 120px;
   color: white;
   font-weight: 1000;
+  margin: 0;
 }
 
 .image-shoutout {
@@ -74,4 +81,120 @@ body {
 
 .sign-up-container {
   flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sign-up--header {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  background-color: #f1f5f9;
+  padding-left: 50px;
+}
+
+.sign-up--header--text {
+  max-width: 900px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #020617;
+}
+
+.sign-up--header--text > p:first-child {
+  margin-bottom: 0px;
+}
+
+.sign-up--header--text > p:nth-child(2) {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.sign-up-form-container {
+  width: 100%;
+  height: 30%;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-bottom: 10px;
+}
+
+#sign-up-form {
+  max-width: 1200px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
+.sign-up-form--header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  max-width: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+.form-label {
+  color: #334155;
+  font-weight: bold;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.sign-up--footer {
+  width: 100%;
+  height: 35%;
+  background-color: #f1f5f9;
+  padding-left: 50px;
+}
+
+.submit-button {
+  width: 280px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #596d48;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.log-in-link {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }

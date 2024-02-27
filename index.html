@@ -22,7 +22,7 @@
             class="odin-logo--img"
             alt="Odin Logo"
           />
-          <div class="odin-logo--text">ODIN</div>
+          <h1 class="odin-logo--text">ODIN</h1>
         </div>
         <div class="image-shoutout">
           <div class="shoutout-text">
@@ -32,7 +32,102 @@
           </div>
         </div>
       </div>
-      <div class="sign-up-container"></div>
+      <div class="sign-up-container">
+        <div class="sign-up--header">
+          <div class="sign-up--header--text">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+          </div>
+        </div>
+        <div class="sign-up-form-container">
+          <form id="sign-up-form">
+            <h2 class="sign-up-form--header">Let's do this!</h2>
+
+            <ul class="form-row">
+              <li class="form-section">
+                <label class="form-label" for="first-name">FIRST NAME</label
+                ><input
+                  class="form-input"
+                  type="text"
+                  id="first-name"
+                  required
+                />
+              </li>
+              <li class="form-section">
+                <label class="form-label" for="last-name">LAST NAME</label
+                ><input
+                  class="form-input"
+                  type="text"
+                  id="last-name"
+                  required
+                />
+              </li>
+            </ul>
+
+            <ul class="form-row">
+              <li class="form-section">
+                <label class="form-label" for="email">EMAIL</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  pattern="([a-zA-Z0-9\\.\\-\\_]+)@([a-zA-Z]+).(.+)"
+                  title="Give a valid email address"
+                  required
+                />
+              </li>
+              <li class="form-section">
+                <label class="form-label" for="phone-number"
+                  >PHONE NUMBER</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="phone-number"
+                  pattern="\d{3}-\d{3}-\d{4}"
+                  title="Give a valid phone number"
+                  required
+                />
+              </li>
+            </ul>
+
+            <ul class="form-row">
+              <li class="form-section">
+                <label class="form-label" for="password">PASSWORD</label>
+                <input
+                  class="form-input"
+                  type="password"
+                  id="password"
+                  required
+                />
+              </li>
+              <li class="form-section">
+                <label class="form-label" for="password-confirm"
+                  >CONFIRM PASSWORD</label
+                ><input
+                  class="form-input"
+                  type="password"
+                  id="password-confirm"
+                  required
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="sign-up--footer">
+          <button type="submit" form="sign-up-form" class="submit-button">
+            Create Account
+          </button>
+          <p>
+            Already have an account?
+            <a href="index.html" class="log-in-link">Log in</a>
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
